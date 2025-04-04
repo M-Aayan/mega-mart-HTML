@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega mart</title>
+  </head>
+  <body>
+    <h1 id="top">Mega Mart</h1>
+    <h2>Your complete shopping designation</h2>
+
+    <!-- Unordered list links -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Fashion</a></li>
+      <li><a href="#">Electronics</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">Carts</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- Product Research -->
+
+    <h2>Product Research</h2>
+
+    <input type="text" placeholder="Search over 10,000$" />
+    <input type="submit" />
+
+    <!-- Featured Products -->
+
+    <h2>Featured Products</h2>
+
+    <table border="1px">
+      <thead>
+        <tr>
+          <th width="160px">Product</th>
+          <th width="190px">Description</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Row 1 -->
+        <tr>
+          <td>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+          </td>
+          <td>
+            Google pixel 9 pro
+            <ul>
+              <li>6.8" Display</li>
+              <li>With gemini pro</li>
+              <li> 50 MP, 48 MP ultrawide, and 48 MP 5x telephoto lens, plus a 42 MP selfie camera on the front.</li>
+            </ul>
+          </td>
+          <td>
+            <strike>1100$</strike> <br />
+            999$
+          </td>
+
+          <td><button>Add to cart</button></td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+          <td>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEw2ce40BkWdXvgMffW8BefaU8jogoAzSNDA&s"
+              alt=""
+            />
+          </td>
+          <td>
+            <ul>
+              <li>flashlight</li>
+              <li>heartbeat sensor</li>
+              <li>amoled display</li>
+            </ul>
+          </td>
+          <td>129.99$</td>
+          <td><button>Add to cart</button></td>
+        </tr>
+        <!-- Row 3 -->
+      </tbody>
+    </table>
+
+    <h2>Create New Account</h2>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="Full name"
+        >Full name: <input type="text" name="" id="Full name"
+      /></label>
+      <label for="Last name"
+        >Last name: <input type="text" name="" id="Last name"
+      /></label>
+      <label for="dob"
+        >Date of birth: <input type="date" name="" id="dob"
+      /></label>
+      <label for="gender"
+        >Gender
+        <input type="radio" name="gender" id="male" value="male" />
+        Male
+        <input type="radio" name="gender" id="female" value="female" />
+        Female
+        <input type="radio" name="gender" id="other" value="other" />
+        Other
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Account Details</legend>
+      <label for="email"
+        >Email: <input type="email" name="" id="email"
+      /></label>
+      <label for="password"
+        >Password: <input type="password" name="" id="password"
+      /></label>
+      <label for="phone"
+        >Phone number: <input type="number" id="phone"
+      /></label>
+      <label for=""
+        >Subscribe to Newsteller <input type="checkbox" name="" id=""
+      /></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Shipping Address</legend>
+      <label for="Street Address"
+        >Street Address <textarea name="" id="Street Address"></textarea>
+      </label>
+      <label for="Country">Country <input type="text" id="Country" /></label>
+      <label for="ZIP code"
+        >ZIP code <input type="number" name="" id="ZIP code"
+      /></label>
+    </fieldset>
+    <br>
+    <button>Create Form</button>
+    <button>Clear Form</button>
+
+    <h2>Product Comparison</h2>
+
+    <table border="1px">
+      <tr>
+        <th>Feature</th>
+        <th>Basic Model</th>
+        <th>Pro Model</th>
+        <th>Premium Model</th>
+      </tr>
+      <tr>
+        <td>Battery Life</td>
+        <td>8 hours</td>
+        <td>12 hours</td>
+        <td>24 hours</td>
+      </tr>
+      <tr>
+        <td>Water Resistance</td>
+        <td>IPX4</td>
+        <td>IPX7</td>
+        <td>IP68</td>
+      </tr>
+      <tr>
+        <td>Warranty</td>
+        <td>1 year</td>
+        <td>2 years</td>
+        <td>3 years</td>
+      </tr>
+    </table>
+
+    <h2>Checkout Process</h2>
+    <fieldset>
+      <legend>Payment Information</legend>
+      <label for="">Card Type: <input type="radio" name="" id="" /></label>
+      <label for="">Visa: <input type="radio" /></label>
+      <label for="">Master Card: <input type="radio" name="" id="" /></label>
+      <label for=""
+        >American Express: <input type="radio" name="" id=""
+      /></label>
+      <br />
+      <label for="Card number"
+        >Card number <input type="number" name="" id="Card number"
+      /></label>
+      <label for="Expiry Date">
+        Expiry Date: <input type="date" name="" id="Expiry Date"
+      /></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Order Summary</legend>
+      <table border="1px">
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Wireless Headphones</td>
+          <td>2</td>
+          <td>$299.98</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td>-</td>
+          <td>$15.00</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="2">Total:</td>
+          <td>$314.98</td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <br>
+    <button>Complete Purchase</button>
+
+    <h2>Product Video</h2>
+    <video src="google pixel ad.mp4" controls width="500" autoplay></video>
+
+    <h2>Product Audio Description</h2>
+    <audio src="audio.mp3" controls></audio>
+
+    <h2>Contact Us</h2>
+    Email: <a href="abc@email.com">abc@email.com</a>
+    <br />
+    Phone: <a href="tel:+4733378901">+47 333 78 901</a>
+
+    <address>Address: abc streect House no:19,Canda</address>
+
+    <h3><i>Here is Our Location </i></h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9835771.168217672!2d-133.90643492655855!3d52.99678639583558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5309b282a82419b5%3A0xb0a9479a409b8e9e!2sAlberta%2C%20Canada!5e0!3m2!1sen!2s!4v1743763153662!5m2!1sen!2s"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <h2>Checkout The Latest Video</h2>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/jihCi_xliFg?si=ZoapWNptxV8TPDE_"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <ul>
+      <li><a href="">Quick Links</a></li>
+      <li><a href="">Privacy Policy</a></li>
+      <li><a href="">Return Policy</a></li>
+    </ul>
+
+    <p>&copy; 2025 Mega Mart. All rights reserved.</p>
+
+    <p>Follow us on Social Media</p>
+    <br>
+    <a href="#top">back to top</a>
+  </body>
+</html>
