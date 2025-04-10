@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mega mart</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1 id="top">Mega Mart</h1>
+    <hr class="top-hr">
     <h2>Your complete shopping designation</h2>
 
     <!-- Unordered list links -->
-    <ul>
+    <ul class="lists">
       <li><a href="#">Home</a></li>
       <li><a href="#">Fashion</a></li>
       <li><a href="#">Electronics</a></li>
@@ -21,22 +23,23 @@
 
     <!-- Product Research -->
 
-    <h2>Product Research</h2>
+    <div class="product">
+    <h2 >Product Research</h2>
 
-    <input type="text" placeholder="Search over 10,000$" />
-    <input type="submit" />
-
+    <input class="input" type="text" placeholder="Search over 10,000$" />
+    <input class="input" type="submit" style="background-color: orange;"/>
+    </div>
     <!-- Featured Products -->
 
     <h2>Featured Products</h2>
 
-    <table border="1px">
+    <table class="table-border-color" border="1px">
       <thead>
         <tr>
-          <th width="160px">Product</th>
-          <th width="190px">Description</th>
-          <th>Price</th>
-          <th>Action</th>
+          <th width="160px" style="background-color: rgb(83, 156, 83); color: white;">Product</th>
+          <th width="190px" style="background-color: rgb(83, 156, 83); color: white;">Description</th>
+          <th style="background-color: rgb(83, 156, 83); color: white;">Price</th>
+          <th style="background-color: rgb(83, 156, 83); color: white;">Action</th>
         </tr>
       </thead>
       <tbody>
@@ -61,7 +64,7 @@
             999$
           </td>
 
-          <td><button>Add to cart</button></td>
+          <td><button style="background-color: rgb(41, 146, 41); color: white;">Add to cart</button></td>
         </tr>
         <!-- Row 2 -->
         <tr>
@@ -79,7 +82,7 @@
             </ul>
           </td>
           <td>129.99$</td>
-          <td><button>Add to cart</button></td>
+          <td><button style="background-color: rgb(41, 146, 41); color: white;">Add to cart</button></td>
         </tr>
         <!-- Row 3 -->
       </tbody>
@@ -135,17 +138,17 @@
       /></label>
     </fieldset>
     <br>
-    <button>Create Form</button>
+    <button style="background-color: rgb(168, 29, 168); color: white;">Create Form</button>
     <button>Clear Form</button>
 
     <h2>Product Comparison</h2>
 
-    <table border="1px">
+    <table class="border-color" border="1px">
       <tr>
-        <th>Feature</th>
-        <th>Basic Model</th>
-        <th>Pro Model</th>
-        <th>Premium Model</th>
+        <th style="background-color: rgb(230, 53, 53); color: white;">Feature</th>
+        <th style="background-color: rgb(230, 53, 53); color: white;">Basic Model</th>
+        <th style="background-color: rgb(230, 53, 53); color: white;">Pro Model</th>
+        <th style="background-color: rgb(230, 53, 53); color: white;">Premium Model</th>
       </tr>
       <tr>
         <td>Battery Life</td>
@@ -219,12 +222,14 @@
     <h2>Product Audio Description</h2>
     <audio src="audio.mp3" controls></audio>
 
+    <div class="contact">
     <h2>Contact Us</h2>
     Email: <a href="abc@email.com">abc@email.com</a>
     <br />
     Phone: <a href="tel:+4733378901">+47 333 78 901</a>
 
     <address>Address: abc streect House no:19,Canda</address>
+    </div>
 
     <h3><i>Here is Our Location </i></h3>
     <iframe
@@ -250,6 +255,7 @@
       allowfullscreen
     ></iframe>
 
+    <div class="bottom-section">
     <ul>
       <li><a href="">Quick Links</a></li>
       <li><a href="">Privacy Policy</a></li>
@@ -259,6 +265,8 @@
     <p>&copy; 2025 Mega Mart. All rights reserved.</p>
 
     <p>Follow us on Social Media</p>
+    </div>
+
     <br>
     <a href="#top">back to top</a>
   </body>
